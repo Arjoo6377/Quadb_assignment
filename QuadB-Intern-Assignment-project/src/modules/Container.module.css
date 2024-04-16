@@ -1,0 +1,77 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.container {
+    padding: 1rem;
+}
+
+.container h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.grid_div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.item_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    transition: border-color 0.3s ease;
+    border-radius: 10px;
+}
+
+.item_card:hover {
+    border-color: royalblue;
+}
+
+.item_btn {
+    background-color: royalblue;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.item_btn:hover {
+    background-color: #4169e1;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+    .grid_div {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .grid_div {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .grid_div {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+
+/* Additional Styles */
+.item_card img {
+    max-width: 100%;
+    border-radius: 50%;
+}

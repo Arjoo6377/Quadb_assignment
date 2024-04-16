@@ -1,0 +1,105 @@
+body{
+    background-color:black;
+}
+.container {
+    width: 80vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    color:red;
+}
+
+.container h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.container p {
+    font-style: italic;
+    font-size: 1.6rem;
+}
+
+.container button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.container button:hover {
+    background-color: #0056b3;
+}
+
+/* Form Styles */
+.formContainer {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color:black; 
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.formContainer h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #007bff; 
+}
+
+.formContainer label {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #007bff;
+    text-align: center; 
+}
+
+.formContainer input,
+.formContainer textarea {
+    width: calc(100% - 1rem);
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.formContainer input:focus,
+.formContainer textarea:focus {
+    border-color: #007bff;
+}
+
+.formContainer textarea {
+    height: 100px;
+}
+
+.formContainer button {
+    background-color: #007bff;
+    color: #fff; 
+    border-radius: 4px;
+}
+
+.formContainer button:hover {
+    background-color: #0056b3; 
+}
+
+/* Media Queries */
+@media all and (min-width: 480px) and (max-width: 768px) {
+    .container p {
+        font-size: 1.1rem;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .container p {
+        font-size: .9rem;
+    }
+}
